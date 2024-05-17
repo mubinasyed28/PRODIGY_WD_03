@@ -1,0 +1,105 @@
+/* style.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url('71V21L1U9CL.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(182, 69, 247, 0.611); /* Add a white background with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#game-options {
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #4002589c;
+    border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#play-human {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#play-human:hover {
+    background-color: #45a049;
+}
+
+#play-human:active {
+    background-color: #397d3c;
+}
+
+#play-ai {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+#play-ai:hover {
+    background-color: #007bb5;
+}
+
+#play-ai:active {
+    background-color: #005f8a;
+}
+
+#reset-button {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+#reset-button:hover {
+    background-color: #da190b;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+}
